@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tim Wylie</title>
+
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -11,32 +15,69 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #efefef;
-      font-family: Arial, sans-serif;
-      color: #111;
+      background: #0D3B66;
+      font-family: 'Inter', sans-serif;
+      color: #faf0ca;
     }
 
     .wrap {
       text-align: center;
       padding: 40px;
+      max-width: 700px;
     }
 
     h1 {
       font-size: 48px;
-      margin: 0 0 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
     }
 
     p {
-      font-size: 28px;
-      line-height: 1.4;
-      margin: 0;
+      font-size: 24px;
+      line-height: 1.5;
+      margin-bottom: 48px;
+      opacity: 0.95;
+    }
+
+    .contact {
+      font-size: 16px;
+      margin-bottom: 16px;
+      opacity: 0.8;
+      letter-spacing: 0.5px;
+    }
+
+    .icons a {
+      display: inline-block;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .icons a:hover {
+      transform: scale(1.1);
+      opacity: 0.85;
+    }
+
+    .icons svg {
+      width: 32px;
+      height: 32px;
+      fill: #faf0ca;
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <h1>Hello</h1>
     <p>My name is Tim Wylie. I am a marketer based in Indianapolis, Indiana.</p>
+
+    <div class="contact">Get in touch</div>
+
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/timwylie/" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5zM.5 8h4v16h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.84-2.2 3.8-2.2 4.07 0 4.82 2.68 4.82 6.17V24h-4v-8.3c0-1.98-.04-4.52-2.75-4.52-2.75 0-3.17 2.15-3.17 4.38V24h-4V8z"/>
+        </svg>
+      </a>
+    </div>
   </div>
 </body>
 </html>
